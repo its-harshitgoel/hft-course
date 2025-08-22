@@ -1,0 +1,14 @@
+64
+    int 4
+    long 8
+    long long 8
+
+32
+    int 4
+    long 4 
+    long long 8
+
+
+int32_t
+int64_t
+
