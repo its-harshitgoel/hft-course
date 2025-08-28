@@ -8,5 +8,6 @@ int* f(){
 
 int main(){
     int* x = f();
+ 
     cout << *x << endl;
 }

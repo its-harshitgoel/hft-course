@@ -1,0 +1,67 @@
+int[M] //Array of integer
+int*[M] //Array of pointers decayed in int**
+
+for(int i = 0; i < N; i++){
+    mat[i] = new int[M];
+}
+
+
+
+
+
+Heap -> memory at runtime, mallcok, new
+
+// Ask for the big chunk of memory at the start time - design pattern int HFT
+// MEMORY POOL
+
+
+
+Syntax for HEAP:
+
+whenever u use new => it always return a pointer
+malloc - takes bytes... malloc(40)
+int* arr = malloc(40)
+
+
+~fno-elide-constructors
+
+
+NRVO
+RVO
+
+
+Memory leaks
+- during runtime, freeing memory.
+- after your program has ran, there is no concept of memory leaks
+- freeing up the space it is occupying.
+
+
+Stack grows downwards, Heap grows upwards
+
+
+brk() - smaller allocation... break pointer moves stack a little up....
+mmap() - memory map region
+
+
+memory exist in pages
+
+pages are 4kb chunks
+
+CPU word size - read in word to word size
+CPU page concept
+
+
+
+endl -> flushing making sys calls
+
+mummap -> free memory return
+
+lazy freeing
+
+gdlib
+
+jcmalloc
+tcmalloc 
+
+multiple threads -> OS -> new 1MB -> centralised malloc -> threads get locked
+jcMalloc -> each thread -> creates offset (dedicated space) -> local cache
